@@ -13,6 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/api/v1/combos")
+@CrossOrigin
 public class CombosController {
 
     @Autowired

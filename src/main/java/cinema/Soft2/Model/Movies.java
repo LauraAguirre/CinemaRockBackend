@@ -48,6 +48,10 @@ public class Movies implements Serializable {
     @Column(name = "chairsOccupied")
     private  int chairsOccupied;
 
+    @Column(name = "type")
+    private String type;
+
+
 
 
 }

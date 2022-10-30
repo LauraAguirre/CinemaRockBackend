@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/api/v1/movies")
+@CrossOrigin
 
 public class MoviesController {
 

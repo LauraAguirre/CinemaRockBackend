@@ -23,9 +23,12 @@ public class UserService {
         return userRepository.findById(id);
     }
 
-    public <S extends User> S save(S user) {
-        return userRepository.save(user);
-    }
+    public <S extends User> S save(S user) {return userRepository.save(user);}
+
+  //  public <S extends User> S autenticar(S user) {return userRepository}
+    public Optional<User> autenticar (User user){return Optional.ofNullable(userRepository.findByEmailAndPassword(user.getEmail(), user.getPassword()));}
+
+    public Optional<User> updateUser (User user){ return Optional.ofNullable(userRepository.save(user));}
 
     public void deleteById(Long id) {
         userRepository.deleteById(id);

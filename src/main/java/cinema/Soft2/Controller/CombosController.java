@@ -42,6 +42,5 @@ public class CombosController {
     private ResponseEntity<Boolean> deleteById(@PathVariable("idCombo") Long idCombos){
         combosService.deleteById(idCombos);
         return ResponseEntity.ok(true);
-        //odio aki
     }
 }
